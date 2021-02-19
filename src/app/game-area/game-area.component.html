@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="content">    
+        <div class="player-infos">
+            <div class="bitcoins">
+                <div class="coins">
+                    <h1>Bitcoins: {{bitcoins}}</h1>
+                </div>
+
+                <mat-icon>monetization_on</mat-icon>
+            </div>
+            <div class="heat">
+                <mat-icon>whatshot</mat-icon>
+                <h1>Heat: {{heat}}°C</h1>
+            </div>
+        </div>
+    
+        <div class="click-area">
+            <div class="bitcoin-miner">
+                <button (click)="click()">
+                    <mat-icon>account_balance</mat-icon> 
+                    <small>per Second: {{bitcoinsPerSecond}}</small>
+                </button>
+            </div>
+            <div class="upgrades-area">
+                <div class="buttons">
+
+                    <button>
+                        <img src="../../assets/svg-icons/motherboard.svg" alt="">
+                        <p>MotherBoard lvl: {{MBlevel}}</p> 
+                        {{MBprice}}$
+                    </button>
+
+                    <button>
+                        <img src="../../assets/svg-icons/cpu.svg" alt="">
+                        <p>CPU lvl: {{CPUlevel}}</p> 
+                        {{CPUprice}}$
+                    </button>
+
+                    <button>
+                        <img src="../../assets/svg-icons/hard-drive.svg" alt="">
+                        <p>HD lvl: {{HDlevel}}</p> 
+                        {{HDprice}}$
+                    </button>
+
+                    <button>
+                        <img src="../../assets/svg-icons/ram.svg" alt="">
+                        <p>RAM lvl: {{RAMlevel}}</p> 
+                        {{RAMprice}}$
+                    </button>
+
+                    <button>
+                        <img src="../../assets/svg-icons/fan.svg" alt="">
+                        <p>Cooler lvl: {{COOLERlevel}}</p> 
+                        {{COOLERprice}}$
+                    </button>
+
+                    <button>
+                        <img src="../../assets/svg-icons/graphics-card.svg" alt="">
+                        <p>GPU lvl: {{GPUlevel}}</p> 
+                        {{GPUprice}}$
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+</div>

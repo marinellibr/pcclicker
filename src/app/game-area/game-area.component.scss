@@ -1,0 +1,128 @@
+$icon-size: 42px;
+$bank-icon-size: 64px;
+$button-height: 150px;
+$button-width: 275px;
+$grid-gap: 20px;
+
+button{
+    outline:none;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    .content{
+        width: 66%;
+        height: 80%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+    
+        .player-infos{
+            display: flex;
+            justify-content: space-between;
+
+            padding: 25px 100px 25px 100px;
+            border-bottom: solid 5px black;
+
+            mat-icon{
+                font-size: $icon-size;
+                width: $icon-size;
+                height: $icon-size;
+            }
+
+            .bitcoins{
+                display: flex;
+                align-items: center;
+            }
+
+            .heat{
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        .click-area{
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            .bitcoin-miner{
+                width: 50%;
+                height: 100%;
+                background-color: #0BBF8C;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                button{
+                    width: 300px;
+                    height: 300px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: darkslategray;
+                    font-size: 24px;
+                    cursor: pointer;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: white;
+
+                    mat-icon{
+                        font-size: $bank-icon-size;
+                        width: $bank-icon-size;
+                        height: $bank-icon-size;
+                    }
+
+                    &:hover{
+                        transform: scale(0.98);
+                        font-size: 24px;
+                    }
+                }
+            }
+            .upgrades-area{
+                width: 50%;
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .buttons{
+                    display: grid;
+                    grid-template-columns: $button-width $button-width;
+                    grid-template-rows: $button-height $button-height $button-height;
+                    gap: $grid-gap $grid-gap;
+
+                    button{
+                        background-color: darkslategray;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 26px;
+                        color: white;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+
+                        img{
+                            width: 64px;
+                            height: 64px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
